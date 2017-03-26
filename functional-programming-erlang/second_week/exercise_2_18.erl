@@ -66,7 +66,6 @@ merge([X|Xs], [Y|Ys]) when X =< Y ->
 merge([X|Xs], [Y|Ys]) when X > Y ->
     concat([ [Y], merge([X|Xs], Ys) ]).
 
-
 quick_sort([]) ->
     [];
 quick_sort([X|[]]) ->
